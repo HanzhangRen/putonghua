@@ -188,7 +188,7 @@ summary(data)
 # Make a descriptive statistics table -----------------------------------------
 data_table1 <- filter(data, vernacular != "O") %>%
   mutate(
-    rich = ifelse(wealth %in% c("Somewhat Rich", "Very Rich"), 1, 0),
+    rich = ifelse(wealth %in% c("SomewhatRich", "VeryRich"), 1, 0),
     parent_hi_edu = ifelse(parent_edu %in% c(
       "Vocational/Technical High School",
       "High School",
